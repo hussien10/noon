@@ -24,7 +24,8 @@ $(document).ready(function() {
         $(hover).hover(
             function() {
                 $(showedElement).show();
-                $(".fixedPopUp").show()
+                $(".fixedPopUp").show();
+                $(".sup-nav-pop").hide()
             },
             function() {
                 $(showedElement).hide();

@@ -153,11 +153,12 @@ header {
     align-items: center;
 }
 
-.shopingCart,
-.registration {
+.shopingCart a,
+.registration a {
     font-size: 13px;
     font-weight: bold;
     color: #404553;
+    text-decoration: none;
 }
 
 .registration {
@@ -374,4 +375,22 @@ header {
     width: 100vw;
     display: none;
     z-index: 7;
+}
+
+
+/* media query */
+
+@media(max-width:1024px) {
+    .catsLinks .f li a {
+        font-size: 13px;
+    }
+    .sup-nav-pop .col-2 {
+        padding-right: 0;
+    }
+    .sup-nav-pop .sup-cats li a {
+        font-size: 12px;
+    }
+    .catsLinks .f li {
+        padding: 11px 8px;
+    }
 }
