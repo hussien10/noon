@@ -18,18 +18,18 @@ $(document).ready(function() {
     }
 
     clickShow(".shipp", ".choose-country,.fixedPopUp");
-
+    clickShow(".registration", ".reg,.fixedPopUp");
     // show on hover
+
     function hoverShow(hover, showedElement) {
         $(hover).hover(
             function() {
                 $(showedElement).show();
                 $(".fixedPopUp").show();
-                $(".sup-nav-pop").hide()
             },
             function() {
                 $(showedElement).hide();
-                $(".fixedPopUp").hide()
+                $(".fixedPopUp").hide();
             }
         );
 
@@ -43,26 +43,15 @@ $(document).ready(function() {
 
     hoverShow(".allCats", ".pop-body");
 
-
-    // copy text
-
-    // function copyText(origin, copy) {
-    //     var theText = $(origin).text();
-    //     $(copy).text(theText);
-    // }
-
     $(".part-one-content ul li a").mouseenter(function() {
         var theText = $(this).text();
         $(".cat-name").text(theText);
     });
 
-    $(".catsLinks li:not(:last-child) a,.sup-nav-pop").mouseenter(function() {
-        $(".sup-nav-pop,.fixedPopUp").show()
-    })
-    $(".sup-nav-pop").mouseleave(function() {
-            $(".sup-nav-pop,.fixedPopUp").hide()
-        })
-        // var catsLinks= $(".catsLinks a").
-        // hoverShow(".catsLinks li:not(:last-child) a,.sup-nav-pop", ".sup-nav-pop");
-
+    $(".catsLinks>ul>li:not(:last-child) a,.allCats").mouseenter(function() {
+        $(".fixedPopUp").show();
+    });
+    $(".catsLinks>ul>li:not(:last-child) a,.allCats").mouseleave(function() {
+        $(".fixedPopUp").hide();
+    });
 });
