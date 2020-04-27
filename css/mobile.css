@@ -12,6 +12,9 @@ ul {
 }
 
 
+/* from here */
+
+
 /* general style */
 
 .flex {
@@ -220,7 +223,7 @@ div.w-50 {
     font-size: 13px;
 }
 
-.choose-country {
+.mobile-header .choose-country {
     background-color: #fff;
     position: fixed;
     font-size: 14px;
@@ -232,7 +235,7 @@ div.w-50 {
     display: none;
 }
 
-.choose-country .links-header {
+.mobile-header .choose-country .links-header {
     padding: 12px 0;
 }
 
